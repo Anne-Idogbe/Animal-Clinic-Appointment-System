@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"/>
+
+</head>
+<body>
+
+    <div class="nav">
+        <a href="#">
+            <img style=" width: 180px;" src="./image/HAH-logo.svg" />
+        </a>
+
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Clients</li>
+            <li>Pharmacy</li>
+            
+        </ul>
+
+        <a href="#">
+            <button class="btna">
+                <img src="image/telephone.png" style="width: 15px;"/>
+                090-976-3333-49
+            </button>
+            <button class="btnb">BOOK NOW</button>
+        </a>
+
+    </div>
+
+    <div class="partA">
+        <div class="partA-text">
+            <h1>SO GLAD YOU'RE HERE</h1>
+            <P>We're building a <br>clinic experience as<br> unique as the pets<br> we care for.</P>
+            <button class="btnc">OUR MISSION</button>
+        </div>
+        <div class="partA-img"></div>
+    </div>
+    
+    <div class="partB">
+        <div class="partB-text">
+            <h1>OUR MISSION</h1>
+            <h1>Premier Pet Care With A Personal Touch</h1>
+            <p>Our team is a family of passionate,dedicated animal lovers known for our excellent service to the pets</p>
+            <button class="btnd">BOOK NOW</button>
+        </div>
+        <div class="partB-img"></div>
+
+    </div>
+
+
+    <div class="partC">
+       <p>Ready To</p>
+       <h1>Make an Appointment?</h1>
+
+       <div class="partC-item">
+          <div class="partC-itemA">
+                <img src="./image/telephone.png" style="width: 15px;"/>
+                090-976-3333-49
+          </div>
+          
+          <button class="btnE">BOOK NOW</button>
+       
+        </div>
+    </div>
+
+    <div class="partD">
+        <div class="partD-text">
+            <p>MEET YOUR DOCTOR</p>
+            <h1>We're All About Smiling Faces <br>& Wagging Tails</h1>
+            <button class="btnF">BOOK NOW</button>
+        </div>
+        <div class="partD-img"></div>
+
+    </div>
+
+    <div class="partE">
+        <div class="partE-text">
+            <h1>What Sets Us Apart</h1>
+            <div class="partE-textARROW">
+                <img src="./image/left-arrow (1).png" style="width: 40px; border-radius: 50%; background-color: navy;"/>
+                <img src="./image/right-arrow (1).png" style="width: 40px; border-radius: 50%; background-color: navy;"/>
+            </div>
+        </div>
+        <div class="partE-img">
+            <div class="partE-img-item">
+                <img src="./image/HAH-callout-01.png" />
+                <h1>Same-Day</h1>
+                <h4>Trusthworthy Veterinary Services</h4>
+            </div>
+            <div class="partE-img-item">
+                <img src="./image/HAH-callout-02.png" />
+                <h1>Urgent Care</h1>
+                <h4>They Saved Our Dog Porter's Life</h4>
+            </div>
+            <div class="partE-img-item">
+                <img src="./image/HAH-callout-03-1.png"/>
+                <h1>Local Favorite</h1>
+                <h4>Polite and Professional</h4>
+            </div>
+        </div>
+    </div>
+ 
+
+    <div class="container">
+        <h1>Animal Clinic Appointment System</h1>
+        <form id="appointmentForm">
+            <fieldset>
+                <legend>Owner Details</legend>
+                <label for="ownerName">Name:</label>
+                <input type="text" id="ownerName" name="ownerName">
+                <span class="error" id="ownerNameError"></span>
+
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone">
+                <span class="error" id="phoneError"></span>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <span class="error" id="emailError"></span>
+            </fieldset>
+
+            <fieldset>
+                <legend>Pet Details</legend>
+                <label for="petName">Pet Name:</label>
+                <input type="text" id="petName" name="petName">
+                <span class="error" id="petNameError"></span>
+
+                <label for="age">Pet Age:</label>
+                <input type="number" id="age" name="age">
+                <span class="error" id="ageError"></span>
+
+                <label for="petType">Type of Pet:</label>
+                <select id="petType" name="petType">
+                    <option value="Dog">Dog</option>
+                    <option value="Cat">Cat</option>
+                    <option value="Rabbit">Rabit</option>
+                    <option value="Lamb">Lamb</option>
+                    <!-- Add more pet types as needed -->
+                </select>
+                <span class="error" id="petTypeError"></span>
+
+                <label for="breed">Breed:</label>
+                <input type="text" id="breed" name="breed">
+                <span class="error" id="breedError"></span>
+            </fieldset>
+
+            <fieldset>
+                <legend>Appointment Details</legend>
+                <label for="appointmentDate">Date:</label>
+                <input type="date" id="appointmentDate" name="appointmentDate">
+                <span class="error" id="appointmentDateError"></span>
+
+                <label for="appointmentTime">Time:</label>
+                <input type="time" id="appointmentTime" name="appointmentTime">
+                <span class="error" id="appointmentTimeError"></span>
+
+                <label for="appointmentType">Type of Appointment:</label>
+                <select id="appointmentType" name="appointmentType">
+                    <option value="Checkup">Checkup</option>
+                    <option value="Vaccination">Vaccination</option>
+                    <option value="Surgery">Surgery</option>
+                    <!-- Add more appointment types as needed -->
+                </select>
+                <span class="error" id="appointmentTypeError"></span>
+
+                <label for="followUp">Is this a follow-up?</label>
+                <select id="followUp" name="followUp">
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+                <span class="error" id="followUpError"></span>
+
+                <label for="veterinarian">Preferred Veterinarian:</label>
+                <select id="veterinarian" name="veterinarian">
+                    <option value="Dr. Smith">Dr. Smith</option>
+                    <option value="Dr. Johnson">Dr. Johnson</option>
+                    <!-- Add more veterinarians as needed -->
+                </select>
+                <span class="error" id="veterinarianError"></span>
+            </fieldset>
+
+        </form>
+        <button class="btnZ" type="button" onclick="submitForm()">Book Appointment</button>
+        <div id="summary"></div>
+    </div>
+
+
+
+    <div class="pre-foot">
+        <div class="pre-foot-left">
+            <a href="#">
+                <img style="width: 150px;" src="./image/HAH-logo.svg" alt="Logo">
+            </a>
+              <p>Our goal is to partner with you to see that your pet has as many happy,healthy years as possible.</p>
+              <h4>Follow Us on Social:</h4>
+           
+              <div class="ft-icon-cont">
+               <a href="#">
+                <img style="height: 30px;" src="./image/facebook.png" alt="Icon">
+               </a>
+               <a href="#">
+                <img style="height: 30px;" src="./image/twitter.png" alt="Icon">
+               </a>
+               <a href="#">
+                <img style="height: 30px;" src="./image/linkedin.png" alt="Icon">
+               </a>
+               <a href="#">
+                <img style="height: 30px;" src="./image/instagram.png" alt="Icon">
+               </a>
+               <a href="#">
+                <img style="height: 30px;" src="./image/youtube.png" alt="Icon">
+               </a>
+            </div>
+             
+            
+        </div>
+        <div class="pre-foot-right">
+            <div class="list-cont">
+                <h4>Opening Time</h4>
+                <a href="#">Mon - Fri: 8AM - 10PM</a>
+                <a href="#">Sat: 9AM-8PM</a>
+                <a href="#"></a>
+                <a href="#">Sun: Closed</a>
+                <!-- <a href="#"></a> -->
+                <h4>We work All The Holidays</h4>
+                
+                
+            </div>
+            <div class="list-cont">
+                <h4>Quick Links</h4>
+                <a href="#">Our Services</a>
+                <a href="#">Membership</a>
+                <a href="#">Careers</a>
+                <a href="#">Meet The Team</a>
+                <a href="#">Privacy Policy</a>
+            
+            </div>
+            <div class="list-cont">
+                <h4>About Us</h4>
+                <a href="#">About Us</a>
+                <a href="#">Our Clients</a>
+                <a href="#">Our Pharmacy</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#"> Store Guide</a>
+                
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright 2023 Heritage. All rights reserved. </p>
+        <p>Policy</p>
+        <p>Questions</p>
+        <p>Affiliate</p>
+        <p>Help</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
